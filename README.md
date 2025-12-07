@@ -2,6 +2,8 @@
 
 A modern, animated landing page for the LlamaChad ($CHAD) memecoin project. Built with React, TypeScript, and Vite, featuring a vibrant design with interactive charts, roadmap visualization, and smooth animations.
 
+**Repository:** [https://github.com/Foisalislambd/llamachad-chad.git](https://github.com/Foisalislambd/llamachad-chad.git)
+
 ## Features
 
 - 🎨 **Modern UI/UX** - Beautiful gradient designs with glassmorphism effects
@@ -10,6 +12,7 @@ A modern, animated landing page for the LlamaChad ($CHAD) memecoin project. Buil
 - 🎭 **Smooth Animations** - Floating elements, marquee tickers, and hover effects
 - 📱 **Responsive Design** - Works seamlessly on desktop and mobile devices
 - ⚡ **Fast Performance** - Built with Vite for optimal build times
+- 💬 **Floating WhatsApp Button** - Fixed popup icon for easy contact
 
 ## Tech Stack
 
@@ -31,7 +34,7 @@ A modern, animated landing page for the LlamaChad ($CHAD) memecoin project. Buil
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Foisalislambd/llamachad-chad.git
    cd llamachad-chad
    ```
 
