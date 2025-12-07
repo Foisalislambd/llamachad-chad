@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LlamaChad ($CHAD) - WAGMI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Space Grotesk"', 'sans-serif'],
+              display: ['"Righteous"', 'cursive'],
+            },
+            colors: {
+              'chad-gold': '#FFD700',
+              'chad-purple': '#A855F7',
+              'chad-pink': '#FF00FF',
+              'chad-green': '#00FF94',
+              'chad-dark': '#0a0a0a',
+              'chad-blue': '#00FFFF',
+            },
+            animation: {
+              'bounce-slow': 'bounce 3s infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'spin-slow': 'spin 12s linear infinite',
+              'marquee': 'marquee 25s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #ffffff;
+        font-family: 'Space Grotesk', sans-serif;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Righteous', cursive;
+      }
+
+      .bg-grid {
+        background-size: 50px 50px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+      }
+
+      .glass-panel {
+        background: rgba(20, 20, 25, 0.6);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .neon-glow {
+        box-shadow: 0 0 10px rgba(168, 85, 247, 0.5), 0 0 20px rgba(168, 85, 247, 0.3);
+      }
+      
+      .neon-text {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+
+      .gradient-text {
+        background: linear-gradient(to right, #00FF94, #00FFFF, #FF00FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% auto;
+        animation: textShine 5s ease-in-out infinite alternate;
+      }
+
+      @keyframes textShine {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
